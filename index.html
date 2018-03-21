@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  </head>
+  <body>
+  <center><h1 id="heading">IET</h1></center>
+  <br>
+  <center><h1>Enter City</h1></center>
+  <br>
+  <div class="row text-center">
+    <div class="col-3"></div>
+    <div class="col-3"><input id="city" placeholder="Input your city" class="form-control"></div>
+    <div class="col-2"></div>
+    <div class="col-1"><button onclick="findWeather()" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button></div>
+    <div class="col-3"></div>
+  </div>
+
+  <br>
+  <center><button onclick="findMyWeather()" class="btn btn-primary"><i class="fa fa-map-marker" aria-hidden="true"></i> Find My Weather</button></center>
+  <!-- Tables -->
+  <center>
+  <table class="table table-hover resultstable">
+  <tbody id="results">
+  </tbody>
+  </table>
+  </center>
+
+  <!-- Previous Searches -->
+  <center><h1 id="prevSearch"></h1>
+  <ul id="lslist"></ul>
+  </center>
+<!--SCRIPTS-->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+  </body>
+</html>
