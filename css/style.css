@@ -6,7 +6,7 @@
 
 body {
   background: linear-gradient(to right, green, skyblue);
-
+  background-repeat: repeat-y;
   background-size: cover;
   background-attachment: fixed;
 }
